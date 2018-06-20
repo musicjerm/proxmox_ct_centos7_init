@@ -15,4 +15,5 @@ sed -i "s/$repl/$with/g" /etc/ssh/sshd_config
 systemctl start sshd
 
 # set timezone (America/Boise example)
+# /etc/localtime should link to the proper timezone file
 timedatectl set-timezone America/Boise
