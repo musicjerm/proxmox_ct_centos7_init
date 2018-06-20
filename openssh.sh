@@ -13,3 +13,6 @@ sed -i "s/$repl/$with/g" /etc/ssh/sshd_config
 
 # start ssh
 systemctl start sshd
+
+# set timezone (America/Boise example)
+timedatectl set-timezone America/Boise
